@@ -1,5 +1,5 @@
 {
-  "name": "@fallahi/baileys-auth-mongo",
+  "name": "@fallahibagaskara/baileys-auth-mongo",
   "version": "1.0.2",
   "description": "Save your Baileys session in MongoDB (Buffer-safe storage).",
   "license": "MIT",
