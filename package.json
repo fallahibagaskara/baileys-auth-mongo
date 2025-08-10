@@ -1,5 +1,5 @@
 {
-  "name": "@fallahi/baileys-auth-mongo",
+  "name": "@fallahibagaskara/baileys-auth-mongo",
   "version": "1.0.1",
   "description": "Save your baileys session in mongodb using this package",
   "main": "dist/js/index.js",
