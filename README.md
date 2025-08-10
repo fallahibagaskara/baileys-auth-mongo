@@ -11,11 +11,11 @@ All APIs and usage remain the same, but the storage implementation has been impr
 
 ## ✨ Why Choose baileys-auth-mongo?
 
-- **Bugfix MongoDB** – tidak ada lagi error `$set` saat menyimpan `Buffer` atau `BinData`.
-- **Persistence** – session bot tersimpan di MongoDB, aman walau server restart.
-- **Reliability** – auto reconnect untuk jaga bot tetap online.
-- **TypeScript-ready** – sudah ada type definitions.
-- **Effortless Integration** – bisa drop-in replace dari `mongo-baileys`.
+- **Bugfix MongoDB** – no more `$set` errors when storing `Buffer` or `BinData`.
+- **Persistence** – bot sessions are stored in MongoDB, safe even after server restarts.
+- **Reliability** – automatic reconnect keeps your bot online.
+- **TypeScript-ready** – includes type definitions out of the box.
+- **Effortless Integration** – can be used as a drop-in replacement for `mongo-baileys`.
 
 ## 📦 Installation
 
