@@ -1,40 +1,47 @@
 {
   "name": "@fallahi/baileys-auth-mongo",
-  "version": "1.0.1",
-  "description": "Save your baileys session in mongodb using this package",
+  "version": "1.0.2",
+  "description": "Save your Baileys session in MongoDB (Buffer-safe storage).",
+  "license": "MIT",
+  "repository": "git+https://github.com/fallahibagaskara/baileys-auth-mongo.git",
+  "type": "module",
   "main": "dist/js/index.js",
+  "module": "dist/js/index.js",
   "types": "dist/js/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fallahibagaskara/baileys-auth-mongo.git"
+  "exports": {
+    ".": {
+      "import": "./dist/js/index.js",
+      "require": "./dist/js/index.js",
+      "types": "./dist/js/index.d.ts"
+    }
   },
+  "files": [
+    "dist/js",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "whatsapp",
-    "bot",
     "baileys",
     "mongodb",
-    "chatbot",
-    "automation",
-    "baileys",
-    "store-session"
+    "auth",
+    "session",
+    "bot"
   ],
-  "author": "HACXK",
-  "license": "MIT",
+  "peerDependencies": {
+    "@whiskeysockets/baileys": ">=6",
+    "mongodb": ">=5"
+  },
   "dependencies": {
-    "@whiskeysockets/baileys": "*",
-    "boom": "^7.3.0",
-    "buffer-json": "^2.0.0",
-    "mongodb": "^6.8.0",
-    "qrcode-terminal": "^0.12.0"
+    "@hapi/boom": "^10.0.0",
+    "buffer-json": "^2.0.0"
   },
   "devDependencies": {
-    "@types/boom": "^7.3.5",
-    "@types/buffer-json": "^2.0.3",
-    "@types/uuid": "^10.0.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.5.0"
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/js/index.js",
+    "prepublishOnly": "npm run build"
   }
 }
