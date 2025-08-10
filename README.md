@@ -1,20 +1,21 @@
-# mongo-baileys 🚀💾
+# baileys-auth-mongo 🚀💾
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://img.shields.io/npm/v/mongo-baileys)](https://www.npmjs.com/package/mongo-baileys)
-[![npm downloads](https://img.shields.io/npm/dm/mongo-baileys)](https://www.npmjs.com/package/mongo-baileys)
+[![npm version](https://img.shields.io/npm/v/baileys-auth-mongo)](https://www.npmjs.com/package/baileys-auth-mongo)
+[![npm downloads](https://img.shields.io/npm/dm/baileys-auth-mongo)](https://www.npmjs.com/package/baileys-auth-mongo)
 
 ✨ Elevate your WhatsApp bot's reliability with seamless MongoDB session persistence! ✨
 
-mongo-baileys is a powerful Node.js library that empowers your Baileys-powered WhatsApp bots with the ability to store and retrieve session data in MongoDB. This ensures your bot stays connected even after restarts, making it more resilient and user-friendly.
+`baileys-auth-mongo` is a **fork** of [mongo-baileys](https://www.npmjs.com/package/mongo-baileys) with a bug fix for binary data (`Buffer`) storage to ensure compatibility with the latest versions of MongoDB and Baileys.
+All APIs and usage remain the same, but the storage implementation has been improved so it no longer triggers errors.
 
-## ✨ Why Choose mongo-baileys?
+## ✨ Why Choose baileys-auth-mongo?
 
-- **Persistence:** Never lose your bot's session again, even after server restarts or crashes.
-- **Reliability:** Automatic reconnects handle disconnections gracefully, ensuring your bot is always online.
-- **TypeScript:** Enjoy the benefits of static typing and improved code maintainability with TypeScript support.
-- **Effortless Integration:** Seamlessly integrate mongo-baileys into your existing Baileys projects with minimal changes.
-- **Customization:** Tailor the library to your specific needs with flexible configuration options.
+- **Bugfix MongoDB** – tidak ada lagi error `$set` saat menyimpan `Buffer` atau `BinData`.
+- **Persistence** – session bot tersimpan di MongoDB, aman walau server restart.
+- **Reliability** – auto reconnect untuk jaga bot tetap online.
+- **TypeScript-ready** – sudah ada type definitions.
+- **Effortless Integration** – bisa drop-in replace dari `mongo-baileys`.
 
 ## 📦 Installation
 
